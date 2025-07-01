@@ -9,6 +9,10 @@
     --radius: 12px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -91,6 +95,49 @@ h2 {
     box-shadow: var(--shadow);
 }
 
+#skills {
+  text-align: center;
+}
+
+.skills-grupo {
+  margin-bottom: 40px;
+}
+
+.skills-grupo h3 {
+  color: #006d77;
+  margin-bottom: 10px;
+}
+
+.skills-lista {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills-lista li {
+  background-color: #ffffff;
+  color: #023047;
+  padding: 12px 18px;
+  border-radius: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease;
+}
+
+.skills-lista li i {
+  font-size: 1.2em;
+  color: #006d77;
+}
+
+.skills-lista li:hover {
+  transform: scale(1.05);
+}
 
 .proyecto {
     flex: 0 0 300px;
